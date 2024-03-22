@@ -21,56 +21,24 @@ const AboutSection = () => {
 
         <div className="aboutimages flex gap-6 mt-20">
           <div className="img1 w-[288px] h-[600px] space-y-5">
-            <img
-              src="/aboutimg/aboutimg(8).jpeg"
-              alt=""
-              className="h-[252px] w-full rounded-lg brightness-75"
-            />
+            <div className="h-[252px] w-full rounded-lg bg-about-image1 bg-cover"></div>
 
-            <img
-              src="/aboutimg/aboutimg(4).jpeg"
-              alt=""
-              className="h-[326px] w-full rounded-lg brightness-75"
-            />
+            <div className="h-[326px] w-full rounded-lg bg-about-image2 bg-cover"></div>
           </div>
 
           <div className="img2 w-[600px] h-[600px] space-y-5">
             <div className="flex gap-6">
-              <img
-                src="/aboutimg/aboutimg(7).jpeg"
-                alt=""
-                className="h-[250px] w-[286px] rounded-lg brightness-75"
-              />
-              <img
-                src="/aboutimg/aboutimg(6).jpeg"
-                alt=""
-                className="h-[250px] w-[286px] rounded-lg brightness-75"
-              />
+              <div className="h-[250px] w-[286px] rounded-lg bg-about-image3 bg-cover"></div>
+              <div className="h-[250px] w-[286px] rounded-lg bg-about-image4 bg-cover"></div>
             </div>
 
-            <img
-              src="/aboutimg/aboutimg(3).jpeg"
-              alt=""
-              className="h-[326px] w-full rounded-lg brightness-75"
-            />
+            <div className="h-[326px] w-full rounded-lg bg-about-image5 bg-cover"></div>
           </div>
 
           <div className="img3 w-[288px] h-[600px] space-y-5">
-            <img
-              src="/aboutimg/aboutimg(5).jpeg"
-              alt=""
-              className="h-[186px] w-full rounded-lg brightness-75"
-            />
-            <img
-              src="/aboutimg/aboutimg(2).jpeg"
-              alt=""
-              className="h-[186px] w-full rounded-lg brightness-75"
-            />
-            <img
-              src="/aboutimg/aboutimg(1).jpeg"
-              alt=""
-              className="h-[186px] w-full rounded-lg brightness-75"
-            />
+            <div className="h-[186px] w-full rounded-lg bg-about-image6 bg-cover"></div>
+            <div className="h-[186px] w-full rounded-lg bg-about-image7 bg-cover"></div>
+            <div className="h-[186px] w-full rounded-lg bg-about-image8 bg-cover"></div>
           </div>
         </div>
       </div>
@@ -79,11 +47,7 @@ const AboutSection = () => {
           Our <span className="text-secondary underline">Story</span>
         </h3>
         <div className="storyContent w-full mt-16 brightness-75 flex gap-6">
-          <img
-            src="/aboutimg/aboutimg.jpeg"
-            alt=""
-            className="w-[400px] rounded-lg h-[404x]"
-          />
+          <div className="w-5/6 rounded-lg pr-20  bg-about-image9 bg-cover"></div>
           <div className="paragraghs text-justify">
             <p>
               At the beginning, it was just the two of them, working out of a
@@ -115,7 +79,7 @@ const AboutSection = () => {
               evolve their business, and to help even more clients achieve their
               real estate goals.
             </p>
-            <button className="btn bg-primary  mt-5 h-[50px]">
+            <button className=" bg-primary mt-5 text-white rounded-md p-3 ">
               Get in touch
             </button>
           </div>

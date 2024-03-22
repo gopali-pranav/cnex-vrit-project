@@ -6,7 +6,7 @@ const Header = () => {
         <img src="/logo.jpg" alt="" className="mix-blend-multiply" />
       </div>
       <nav>
-        <ul className="menu flex items-center text-primary space-x-14 font-semibold">
+        <ul className="menu flex items-center text-primary space-x-8 ">
           <li>
             <Link to="/">Home</Link>
           </li>

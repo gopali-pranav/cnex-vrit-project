@@ -6,6 +6,24 @@ export default {
       backgroundImage: {
         "hero-image":
           "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/heroimage.jpeg')",
+        "about-image1":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/1.jpeg')",
+        "about-image2":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/2.jpeg')",
+        "about-image3":
+          "linear-gradient(rgba(10, 13, 0, 0.5), rgba(10, 13, 10, 0.5)), url('/public/aboutimg/3.jpeg')",
+        "about-image4":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/4.jpeg')",
+        "about-image5":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/5.jpeg')",
+        "about-image6":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/6.jpeg')",
+        "about-image7":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/7.jpeg')",
+        "about-image8":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/8.jpeg')",
+        "about-image9":
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/aboutimg/9.jpeg')",
         "fed-img1":
           "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/fedimg/fedimg1.jpeg')",
         "fed-img2":
