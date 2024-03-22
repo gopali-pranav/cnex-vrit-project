@@ -14,40 +14,64 @@
   box-sizing: border-box;
 }
 
-@layer components {
-  .btn {
-    color: white;
-    width: 168px;
-    padding: 8px;
-    gap: 10px;
-    border-radius: 8px 8px;
-    opacity: 0px;
-  }
-  .bg-hero-image {
-    height: 789px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .content2text2 h2 {
-    font-size: 28px;
-  }
-  .content2text2 p {
-    font-size: 14px;
-  }
-  .content2text2 span {
-    font-weight: 600;
-    font-size: 20px;
-    position: relative;
-    bottom: 3px;
-  }
+.btn {
+  color: #ffffff;
+  width: 168px;
+  padding: 8px;
+  gap: 10px;
+  border-radius: 8px 8px;
+  opacity: 0px;
+}
+/* herosections */
+.bg-hero-image {
+  height: 789px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@layer components {
-  .container {
-    width: 1224px;
-    height: 880px;
-  }
+.content2text2 h2 {
+  font-size: 28px;
+}
+.content2text2 p {
+  font-size: 14px;
+}
+.content2text2 span {
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  bottom: 3px;
+}
+/* about section */
+.container {
+  width: 1224px;
+  height: 880px;
+}
+.storyContainer {
+  width: 1224px;
+  height: 610px;
+}
+.reasonContainer {
+  width: 1224px;
+  height: 350px;
+}
+.featureContainer {
+  width: 1224px;
+  height: 800px;
+}
+.featureContainer2 {
+  width: 1224px;
+  height: 540px;
+}
+.faqContainer {
+  width: 1224px;
+  height: 673px;
+}
+.contactContainer {
+  width: 1224px;
+  height: 600px;
+}
+.footerContainer {
+  width: 1224px;
 }
