@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: vietnam;
+  src: url("/BeVietnamPro-Regular.ttf");
+}
+
+* {
+  font-family: vietnam;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@layer components {
+  .btn {
+    color: white;
+    width: 168px;
+    padding: 8px;
+    gap: 10px;
+    border-radius: 8px 8px;
+    opacity: 0px;
+  }
+  .bg-hero-image {
+    height: 789px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .content2text2 h2 {
+    font-size: 28px;
+  }
+  .content2text2 p {
+    font-size: 14px;
+  }
+  .content2text2 span {
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+  }
+}
+
+@layer components {
+  .container {
+    width: 1224px;
+    height: 880px;
+  }
+}
