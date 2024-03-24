@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: vietnam;
+  src: url("/BeVietnamPro-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vietnam;
+}
+
+li .list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #86888a;
+  line-height: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 288px 1fr 1fr 1fr; /* Sidebar takes 250px, rest for content */
+  grid-template-rows: 0.2fr 3fr; /* Auto-sized rows */
+  grid-template-areas:
+    "sidebar navbar navbar navbar"
+    "sidebar content content content";
+  height: 100vh; /* Full height of the viewport */
+}
+
+.header {
+  grid-area: navbar;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.content {
+  grid-area: content;
+}
+
+/* App.css */
+
+/* Style for table head */
+.ant-table-thead > tr > th {
+  background-color: #f0f0f0; /* Example background color */
+  font-size: 20px;
+}
+
+/* Style for table body */
+.ant-table-tbody > tr > td {
+  padding: 12px; /* Example padding */
+  border-bottom: 1px solid #ccc; /* Example border */
+}
+
+/* Style for alternating rows (optional) */
+.ant-table-tbody > tr:nth-child(even) {
+  background-color: #f9f9f9;
+  font-size: 15px;
+  /* Example background color for even rows */
+}
+.ant-table-tbody > tr:nth-child(odd) {
+  background-color: #ffffff;
+  font-size: 15px;
+  /* Example background color for even rows */
+}

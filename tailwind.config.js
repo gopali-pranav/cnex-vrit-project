@@ -48,6 +48,9 @@ export default {
       faqbackground: "#F3F3F3",
       contactcolor: "#B3B3B3",
       footercolor: "#D1D3DC",
+      sidebarcolor: "#86888A",
+      categoriestextcolor: "#D6EBFB",
+      black: "#000000",
     },
   },
 
