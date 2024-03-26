@@ -19,7 +19,7 @@ const Categories = () => {
       setCategories(response.data);
     }
     getCategory();
-  }, []);
+  }, [categories]);
 
   const handleDelete = async (id) => {
     try {

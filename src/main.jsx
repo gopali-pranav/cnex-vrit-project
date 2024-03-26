@@ -8,6 +8,9 @@ import Products from "./pages/Products.jsx";
 import Categories from "./pages/Categories.jsx";
 import Variations from "./pages/Variations.jsx";
 import Collections from "./pages/Collections.jsx";
+import ProductDetailPage from "./pages/ProductDetailPage.jsx";
+import { store } from "./redux/store.js";
+import { Provider } from "react-redux";
 
 const myRouter = createBrowserRouter([
   {
@@ -16,7 +19,7 @@ const myRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Products />,
+        element: <Categories />,
         children: [
           {
             path: "/categories",
@@ -34,6 +37,10 @@ const myRouter = createBrowserRouter([
             path: "/collections",
             element: <Collections />,
           },
+          {
+            path: "/product/:id",
+            element: <ProductDetailPage />,
+          },
         ],
       },
     ],
@@ -42,6 +49,8 @@ const myRouter = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={myRouter} />
+    <Provider store={store}>
+      <RouterProvider router={myRouter} />
+    </Provider>
   </React.StrictMode>
 );
