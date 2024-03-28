@@ -11,6 +11,8 @@ import Collections from "./pages/Collections.jsx";
 import ProductDetailPage from "./pages/ProductDetailPage.jsx";
 import { store } from "./redux/store.js";
 import { Provider } from "react-redux";
+import CustomerProfilePage from "./pages/CustomerProfile.jsx";
+import Cart from "./pages/Cart.jsx";
 
 const myRouter = createBrowserRouter([
   {
@@ -38,8 +40,16 @@ const myRouter = createBrowserRouter([
             element: <Collections />,
           },
           {
+            path: "/cart",
+            element: <Cart />,
+          },
+          {
             path: "/product/:id",
             element: <ProductDetailPage />,
+          },
+          {
+            path: "/customerprofile",
+            element: <CustomerProfilePage />,
           },
         ],
       },

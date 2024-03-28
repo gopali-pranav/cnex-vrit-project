@@ -4,6 +4,8 @@ import Products from "../pages/Products";
 import { Routes, Route } from "react-router-dom";
 import Variations from "../pages/Variations";
 import ProductDetailPage from "../pages/ProductDetailPage";
+import CustomerProfilePage from "../pages/CustomerProfile.jsx";
+import Cart from "../pages/Cart.jsx";
 
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
 
       <Routes>
         <Route path="/product/:id" element={<ProductDetailPage />} />
+        <Route path="/customerprofile" element={<CustomerProfilePage />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
   );

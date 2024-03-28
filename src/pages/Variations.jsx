@@ -3,12 +3,16 @@ import axios from "axios";
 import { Card, Spin, Row, Col } from "antd";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import toast from "react-hot-toast";
+import { addItemToCart } from "../redux/cartSlice";
 
 const { Meta } = Card;
 
 const VariationsPage = () => {
   const [variations, setVariations] = useState([]);
   const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     async function fetchVariations() {
@@ -24,6 +28,10 @@ const VariationsPage = () => {
     fetchVariations();
   }, []);
 
+  const handleAddToCart = (variation) => {
+    dispatch(addItemToCart(variation));
+    toast.success("Product added to Collection successfully!");
+  };
   const renderRatingStars = (rating) => {
     const starCount = 5;
     const filledStars = Math.floor(rating);
@@ -80,6 +88,14 @@ const VariationsPage = () => {
                   </div>
                 </Card>
               </Link>
+              <div className="w-full flex justify-center">
+                <button
+                  className="bg-secondary p-1 w-72 h-10 text-white rounded-lg "
+                  onClick={() => handleAddToCart(variation)}
+                >
+                  Add to Collection
+                </button>
+              </div>
             </Col>
           ))
         )}

@@ -51,6 +51,12 @@ export default {
       sidebarcolor: "#86888A",
       categoriestextcolor: "#D6EBFB",
       black: "#000000",
+      red: "#cf1406",
+      blue: "#007bff",
+      green: "#28a745",
+      yellow: "#ffc107",
+      purple: "#6f42c1",
+      gray: "#6c757d",
     },
   },
 

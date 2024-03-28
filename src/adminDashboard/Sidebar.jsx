@@ -120,7 +120,7 @@ const Sidebar = () => {
               } rounded-md`}
               onClick={() => handleItemClick("Customer Profile")}
             >
-              <Link className="list">
+              <Link to={"/customerprofile"} className="list">
                 <FaUser /> Customer Profile
               </Link>
             </li>

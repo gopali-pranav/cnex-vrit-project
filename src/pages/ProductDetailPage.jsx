@@ -3,11 +3,15 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Table, Spin } from "antd";
 import { FaStar } from "react-icons/fa";
+import { addItemToCart } from "../redux/cartSlice";
+import { useDispatch } from "react-redux";
+import toast from "react-hot-toast";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     async function fetchProduct() {
@@ -51,6 +55,11 @@ const ProductDetailPage = () => {
     return stars;
   };
 
+  const handleAddToCart = () => {
+    dispatch(addItemToCart(product));
+    toast.success("Product added to Collection successfully!");
+  };
+
   const columns = [
     {
       title: "Title",
@@ -63,7 +72,7 @@ const ProductDetailPage = () => {
       key: "category",
     },
     {
-      title: "Price",
+      title: "Actual Price",
       dataIndex: "price",
       key: "price",
       render: (price) => `$${price}`,
@@ -90,6 +99,18 @@ const ProductDetailPage = () => {
           {renderRatingStars(rating.rate)}
           <span>({rating.count} reviews)</span>
         </div>
+      ),
+    },
+    {
+      title: "Action",
+      key: "action",
+      render: () => (
+        <button
+          className="bg-secondary p-1 w-40 h-10 text-white rounded-lg "
+          onClick={handleAddToCart}
+        >
+          Add to Collection
+        </button>
       ),
     },
   ];
