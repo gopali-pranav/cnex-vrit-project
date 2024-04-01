@@ -276,14 +276,16 @@ const CustomerProfilePage = () => {
     <div>
       <div className="flex justify-between items-center">
         <h1 className="text-3xl mb-4">Customer Profiles</h1>
-        <Button
-          onClick={() => setIsSettingMasterPassword(true)}
-          style={{
-            marginBottom: "1rem",
-          }}
-        >
-          Set Master Password
-        </Button>
+        {authenticated && (
+          <Button
+            onClick={() => setIsSettingMasterPassword(true)}
+            style={{
+              marginBottom: "1rem",
+            }}
+          >
+            Set Master Password
+          </Button>
+        )}
       </div>
 
       {showLoginForm && (

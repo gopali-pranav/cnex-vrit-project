@@ -6,6 +6,10 @@ import Variations from "../pages/Variations";
 import ProductDetailPage from "../pages/ProductDetailPage";
 import CustomerProfilePage from "../pages/CustomerProfile.jsx";
 import Cart from "../pages/Cart.jsx";
+import OrderPage from "../pages/OrderPage.jsx";
+import OrderDetailPage from "../pages/OrderDetailPage.jsx";
+import Appointments from "../pages/Appointments.jsx";
+import ManageAppointments from "../pages/ManageAppointments.jsx";
 
 const Home = () => {
   return (
@@ -22,6 +26,10 @@ const Home = () => {
         <Route path="/product/:id" element={<ProductDetailPage />} />
         <Route path="/customerprofile" element={<CustomerProfilePage />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/order" element={<OrderPage />} />
+        <Route path="/order/:orderId" element={<OrderDetailPage />} />
+        <Route path="/appointment" element={<Appointments />} />
+        <Route path="/manage_appointment" element={<ManageAppointments />} />
       </Routes>
     </div>
   );

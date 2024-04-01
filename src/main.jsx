@@ -13,6 +13,10 @@ import { store } from "./redux/store.js";
 import { Provider } from "react-redux";
 import CustomerProfilePage from "./pages/CustomerProfile.jsx";
 import Cart from "./pages/Cart.jsx";
+import OrderPage from "./pages/OrderPage.jsx";
+import OrderDetailPage from "./pages/OrderDetailPage.jsx";
+import Appointments from "./pages/Appointments.jsx";
+import ManageAppointments from "./pages/ManageAppointments.jsx";
 
 const myRouter = createBrowserRouter([
   {
@@ -50,6 +54,22 @@ const myRouter = createBrowserRouter([
           {
             path: "/customerprofile",
             element: <CustomerProfilePage />,
+          },
+          {
+            path: "/order",
+            element: <OrderPage />,
+          },
+          {
+            path: "/order/:orderId",
+            element: <OrderDetailPage />,
+          },
+          {
+            path: "/appointment",
+            element: <Appointments />,
+          },
+          {
+            path: "/manage_appointment",
+            element: <ManageAppointments />,
           },
         ],
       },

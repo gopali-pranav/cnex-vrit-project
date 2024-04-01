@@ -70,7 +70,7 @@ const Sidebar = () => {
               } rounded-md`}
               onClick={() => handleItemClick("Order")}
             >
-              <Link className="list">
+              <Link to={"/order"} className="list">
                 <MdOutlineShoppingCart /> Order
               </Link>
             </li>
@@ -80,7 +80,7 @@ const Sidebar = () => {
               } rounded-md`}
               onClick={() => handleItemClick("Appointments")}
             >
-              <Link className="list">
+              <Link to={"/appointment"} className="list">
                 <SlCalender /> Appointments
               </Link>
             </li>
