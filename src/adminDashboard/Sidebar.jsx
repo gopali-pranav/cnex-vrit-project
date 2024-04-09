@@ -90,7 +90,7 @@ const Sidebar = () => {
               } rounded-md`}
               onClick={() => handleItemClick("Coupons")}
             >
-              <Link className="list">
+              <Link to={"/coupon"} className="list">
                 <RiCoupon3Fill /> Coupons
               </Link>
             </li>

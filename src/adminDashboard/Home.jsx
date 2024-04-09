@@ -10,6 +10,7 @@ import OrderPage from "../pages/OrderPage.jsx";
 import OrderDetailPage from "../pages/OrderDetailPage.jsx";
 import Appointments from "../pages/Appointments.jsx";
 import ManageAppointments from "../pages/ManageAppointments.jsx";
+import Coupon from "../pages/Coupon.jsx";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         <Route path="/order/:orderId" element={<OrderDetailPage />} />
         <Route path="/appointment" element={<Appointments />} />
         <Route path="/manage_appointment" element={<ManageAppointments />} />
+        <Route path="/coupon" element={<Coupon />} />
       </Routes>
     </div>
   );

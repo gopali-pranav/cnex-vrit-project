@@ -17,6 +17,7 @@ import OrderPage from "./pages/OrderPage.jsx";
 import OrderDetailPage from "./pages/OrderDetailPage.jsx";
 import Appointments from "./pages/Appointments.jsx";
 import ManageAppointments from "./pages/ManageAppointments.jsx";
+import Coupon from "./pages/Coupon.jsx";
 
 const myRouter = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const myRouter = createBrowserRouter([
           {
             path: "/manage_appointment",
             element: <ManageAppointments />,
+          },
+          {
+            path: "/coupon",
+            element: <Coupon />,
           },
         ],
       },
